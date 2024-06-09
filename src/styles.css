@@ -1,3 +1,10 @@
+:root {
+    --white-squares: #ebecd0;
+    --green-squares: #739552;
+    --light-black: #5c5957;
+    --light-white: #f9f9f9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +28,8 @@ nav {
 button {
     padding: 15px 30px;
     border-radius: 10px;
-    background-color: darkgreen;
-    color: white;
+    background-color: var(--green-squares);
+    color: var(--light-white);
     border: none;
     font-size: 20px;
 }
@@ -45,3 +52,58 @@ button {
     height: auto;
 }
 
+img {
+    width: 200px;
+    height: auto;
+}
+
+/* Tiles display requirements */
+.item {
+    border: 2px solid var(--light-black);
+    background-color: var(--white-squares);
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Home page */
+.home-page {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    background-color: var(--green-squares);
+}
+
+/* Menu page */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(auto-fill, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--green-squares);
+}
+
+.menu h1 {
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: center;
+    padding: 30px;
+}
+
+/* About Us */
+.about-us {
+    
+    display: grid;
+    grid-template-rows: 1fr repeat(auto-fill, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--green-squares);
+}
