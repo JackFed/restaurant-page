@@ -3,11 +3,13 @@
     --green-squares: #739552;
     --light-black: #5c5957;
     --light-white: #f9f9f9;
+    --dark-black: #3c3b39;
 }
 
 * {
     margin: 0;
     padding: 0;
+    color: var(--dark-black);
 }
 
 p {
@@ -86,17 +88,17 @@ img {
 .home-page {
     width: 100%;
     display: grid;
-    grid-template-rows: 0.5fr repeat(3, 1fr);
+    grid-template-rows: 0.25fr 2fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     gap: 10px;
     background-color: var(--green-squares);
     padding: 20px;
-
 }
 
 .home-page .item {
     max-width: 80%;
+    min-width: 300px;
 }
 
 /* Menu page */
@@ -163,7 +165,8 @@ img {
 }
 
 .about-us .item {
-    max-width: 500px;
+    max-width: 800px;
     text-align: center;
     gap: 10px;
+    min-width: 300px;
 }
