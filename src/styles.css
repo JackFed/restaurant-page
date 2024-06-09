@@ -47,7 +47,7 @@ button {
 }
 
 .logo-wrapper {
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-self: left;
 }
@@ -65,7 +65,7 @@ button {
 }
 
 img {
-    width: 200px;
+    min-width: 100px;
     height: auto;
     border: 2px solid var(--light-black);
 }
