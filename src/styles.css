@@ -16,6 +16,10 @@ p {
     padding: 0.25em;
 }
 
+#content {
+    width: 100%;
+}
+
 /* Header */
 header {
     display: grid;
