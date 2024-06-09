@@ -1,10 +1,13 @@
 import './styles.css';
+import Logo from './images/Chess-Skewer.png';
 import makeHomePage from './home';
 import makeMenuPage from './menu';
 import makeAboutPage from './about';
 
 
 function component() {
+    const logo = document.querySelector('.logo');
+    logo.setAttribute("src", Logo);
     const container = document.querySelector('#content');
     const homeBtn = document.querySelector("#homeBtn")
     const menuBtn = document.querySelector("#menuBtn")
