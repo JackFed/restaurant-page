@@ -7,16 +7,25 @@ import makeAboutPage from './about';
 
 function component() {
     const container = document.querySelector('#content');
-    // Add the image to our existing div.
-    const myIcon = new Image();
-    myIcon.src = Icon;
+    const homeBtn = document.querySelector("#homeBtn")
+    const menuBtn = document.querySelector("#menuBtn")
+    const aboutBtn = document.querySelector("#aboutBtn")
+
+    homeBtn.addEventListener("click", () => {
+        container.textContent = ""; 
+        container.appendChild(makeHomePage());
+    })
+    menuBtn.addEventListener("click", () => {
+        container.textContent = "";
+        container.appendChild(makeMenuPage());
+    })
+    aboutBtn.addEventListener("click", () => {
+        container.textContent = "";
+        container.appendChild(makeAboutPage());
+    })
+
     const homePage = makeHomePage();
-    const menuPage = makeMenuPage(); 
-    const aboutPage = makeAboutPage(); 
-    console.log(menuPage)
     container.appendChild(homePage);
-    container.appendChild(menuPage);
-    container.appendChild(aboutPage);
 }
 
 document.body.appendChild(component());
