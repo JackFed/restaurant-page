@@ -1,4 +1,10 @@
 import './styles.css';
+import lambSkewers from './images/lamb-skewers.jpg';
+import teriyakiGrilled from "./images/teriyaki-grilled.jpg";
+import thaiBeef from './images/Thai-Beef-Skewers.jpg';
+import asianGarlic from './images/asiangarlicskewers.jpg';
+import greekSalad from './images/greek-salad.jpeg';
+import beefKabob from './images/beef-kabob.jpg';
 
 export default function makeMenuPage() {
     const menuPage = document.createElement('div');
@@ -35,27 +41,27 @@ function getInfo() {
     const info = [
         {
             name: "Sticky jerk lamb skewers with garlic sauce",
-            src: "../src/images/lamb-skewers.jpg"
+            src: lambSkewers
         },
         {
             name: "Grilled Hawaiian Teriyaki Chicken Skewers",
-            src: "../src/images/teriyaki-grilled.jpg"
+            src: teriyakiGrilled
         },
         {
             name: "Thai Beef Skewers",
-            src: "../src/images/Thai-Beef-Skewers.jpg"
+            src: thaiBeef
         },
         {
             name: "Grilled Asian Garlic Steak Skewers",
-            src: "../src/images/asiangarlicskewers.jpg"
+            src: asianGarlic
         },
         {
             name: "Greek Salad Skewers",
-            src: "../src/images//greek-salad.jpeg"
+            src: greekSalad
         },
         {
             name: "Shish Kebabs",
-            src: "../src/images/beef-kabob.jpg"
+            src: beefKabob
         },
     ]
     return info;
