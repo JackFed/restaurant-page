@@ -12,7 +12,6 @@ export default function makeHomePage() {
     for (let i = 0; i < 3; i++) {
         items[i] = document.createElement('div');
         items[i].classList.add('item');
-        console.log(items[i]);
     }
     items[0] = makeInfoItem(items[0]);
     items[1] = makeHoursItem(items[1]);

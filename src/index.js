@@ -1,6 +1,8 @@
 import './styles.css';
 import Icon from './images/beef-kabob.jpg';
 import makeHomePage from './home';
+import makeMenuPage from './menu';
+import makeAboutPage from './about';
 
 
 function component() {
@@ -9,8 +11,12 @@ function component() {
     const myIcon = new Image();
     myIcon.src = Icon;
     const homePage = makeHomePage();
+    const menuPage = makeMenuPage(); 
+    const aboutPage = makeAboutPage(); 
+    console.log(menuPage)
     container.appendChild(homePage);
-
+    container.appendChild(menuPage);
+    container.appendChild(aboutPage);
 }
 
 document.body.appendChild(component());
